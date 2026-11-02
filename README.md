@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/hero.png" alt="Vehicle Parker" width="100%">
+</p>
+
 # Vehicle Parker
 
 Plugin to park all cars.
