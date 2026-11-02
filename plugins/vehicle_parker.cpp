@@ -106,6 +106,7 @@ static DWORD WINAPI hotkeys(LPVOID) {
 
 extern "C" __declspec(dllexport) int PluginInit(const MtApi* a) {
     if (!attach(a)) return 1;
+    if (iniDisabled(L"vehicle_parker.ini")) return 0;
     CloseHandle(CreateThread(nullptr, 0, hotkeys, nullptr, 0, nullptr));
     return 0;
 }
